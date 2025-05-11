@@ -19,3 +19,12 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "./start.sh"
+
+[[workflows.workflow]]
+name = "Test Search"
+author = 34307324
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python test_pubmed.py \"covid vaccine\" 5"

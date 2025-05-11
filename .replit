@@ -1,11 +1,12 @@
+
 modules = ["python-3.10"]
-run = "start"
+run = "./start.sh"
 
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "start"]
+run = ["sh", "-c", "./start.sh"]
 
 [workflows]
 runButton = "Run"

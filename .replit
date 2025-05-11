@@ -6,3 +6,15 @@ channel = "stable-24_05"
 
 [deployment]
 run = ["sh", "-c", "start"]
+
+[workflows]
+runButton = "Run"
+
+[[workflows.workflow]]
+name = "Run"
+author = 34307324
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./start.sh"
